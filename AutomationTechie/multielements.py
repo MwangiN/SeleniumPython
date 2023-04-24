@@ -9,4 +9,8 @@ driver.get("http://automationpractice.pl/index.php")
 sliders=driver.find_elements(By.CLASS_NAME,"homeslider-container")
 print(len(sliders))
 
+links=driver.find_elements(By.TAG_NAME, "a")
+print(len(links))
+
 driver.close()
+
